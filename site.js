@@ -111,3 +111,10 @@ var y=document.getElementById('yr');if(y)y.textContent=new Date().getFullYear();
     touchStartX = null;
   });
 })();
+
+/* ---------- Get Involved: pre-select from ?i=volunteer|partner|academy|member|invite|kind ---------- */
+(function () {
+  var i = new URLSearchParams(location.search).get('i'), s = document.getElementById('i');
+  var map = { volunteer: 'Volunteer', member: 'Become a member', partner: 'Partner with Paint a Life', academy: 'Partner with Paint a Life Academy', invite: 'Invite you for a talk / workshop', kind: 'Donate in kind' };
+  if (s && map[i]) s.value = map[i];
+})();

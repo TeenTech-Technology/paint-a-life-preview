@@ -3,7 +3,7 @@
 <title>Donate | Paint a Life Initiative (Preview)</title><meta name="description" content="Paint a Life Initiative – Transforming Children Into Leaders. Lusaka, Zambia."><meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#5b2a86"><link rel="icon" type="image/png" href="img/logo.png"><link rel="stylesheet" href="style.css"></head><body>
 <div class="pbar">Preview prepared by Teen Tech Technology &ndash; not the official site</div>
-<nav><div class="w"><a class="brand" href="index.html"><img src="img/logo.png" alt="Paint a Life logo">Paint a Life Initiative</a>
+<nav><div class="w"><a class="brand" href="index.html"><img class="hand" src="img/logo.png" alt="Paint a Life logo">Paint a Life Initiative</a>
 <ul><li><a href="index.html" class="">Home</a></li>
 <li><a href="about.html" class="">About</a></li>
 <li><a href="programmes.html" class="">Programmes</a></li>
@@ -12,16 +12,43 @@
 <li><a href="donate.html" class="on">Donate</a></li>
 <li><a href="contact.html" class="">Contact</a></li></ul><a class="btn bc" href="get-involved.html" style="padding:10px 20px">Get Involved</a><button class="menu" aria-label="Menu" aria-expanded="false">&#9776;</button></div></nav>
 <main><header class="ph" style="--img:url(img/hyg3.webp)"><div class="w"><span class="tag">Give</span><h1>Donate</h1><p>Your gift helps transform children into leaders.</p></div></header>
-<section><div class="w"><span class="k">Ways to give</span><h2>Mobile Money or bank transfer</h2><p class="lead">Support Education, Mentorship, Advocacy and Paint a Life Academy.</p>
+<section><div class="w dgrid"><div>
+<span class="k">Give online</span><h2>Your gift transforms children into leaders</h2>
+<p class="lead">Choose an amount, choose your cause, and pay securely by Mobile Money or card.</p>
+<ul class="list"><li><b>General fund</b> &ndash; Education, Mentorship and Advocacy for children and youths aged 6&ndash;25.</li><li><b>Paint a Life Academy</b> &ndash; the newly reopened school for deaf learners.</li></ul>
+<p class="note"><b>DEMO / TEST MODE.</b> This checkout is wired for the Lenco payment gateway (Zambian, ZMW Mobile Money &amp; cards) but has <b>no keys connected</b>. No money can be taken.</p>
+<div class="trust"><span>MTN MoMo</span><span>Airtel Money</span><span>Visa / Mastercard</span><span>ZMW</span></div></div>
+<form class="cf dform" id="dform" novalidate>
+<div class="steps"><span class="on">1 Amount</span><span>2 Details</span><span>3 Pay</span></div>
+<div class="stp" data-s="1"><div class="seg" role="radiogroup"><label><input type="radio" name="freq" value="one-off" checked><span>One-off</span></label><label><input type="radio" name="freq" value="monthly"><span>Monthly</span></label></div>
+<div class="amts"><label><input type="radio" name="amt" value="50"><span>K50</span></label><label><input type="radio" name="amt" value="100" checked><span>K100</span></label><label><input type="radio" name="amt" value="250"><span>K250</span></label><label><input type="radio" name="amt" value="500"><span>K500</span></label><label><input type="radio" name="amt" value="custom"><span>Other</span></label></div>
+<div id="custom" hidden><label for="ca">Amount (ZMW)</label><input id="ca" type="number" min="10" step="1" inputmode="numeric" placeholder="e.g. 150"></div>
+<label for="cause">Give to</label><select id="cause" name="cause"><option value="general">General fund</option><option value="academy">Paint a Life Academy (deaf school)</option></select>
+<button type="button" class="btn bc full nx">Continue &rarr;</button></div>
+<div class="stp" data-s="2" hidden><div class="row"><div><label for="dn">Full name</label><input id="dn" required autocomplete="name"></div><div><label for="de">Email (for your receipt)</label><input id="de" type="email" required autocomplete="email"></div></div>
+<label class="chk"><input type="checkbox" id="anon"> Keep my gift anonymous</label>
+<div class="nav2"><button type="button" class="btn bo2 bk">&larr; Back</button><button type="button" class="btn bc nx">Continue &rarr;</button></div></div>
+<div class="stp" data-s="3" hidden><p class="sum" id="sum"></p><label>Pay with</label>
+<div class="pm"><label><input type="radio" name="pm" value="mtn" checked><span>MTN MoMo</span></label><label><input type="radio" name="pm" value="airtel"><span>Airtel Money</span></label><label><input type="radio" name="pm" value="card"><span>Card</span></label></div>
+<div id="mmf"><label for="dp">Mobile Money number</label><input id="dp" type="tel" inputmode="tel" placeholder="09X XXX XXXX" autocomplete="tel"><small>You would get a prompt on your phone to approve with your PIN.</small></div>
+<p id="cardf" hidden class="small">Card details are entered in the gateway&rsquo;s secure window &ndash; never on this site.</p>
+<div class="nav2"><button type="button" class="btn bo2 bk">&larr; Back</button><button type="submit" class="btn bc" id="paybtn">Donate</button></div>
+<p class="demo-tag">DEMO MODE &middot; no real charge</p></div>
+<div class="stp done" data-s="4" hidden><div class="tick">&#10003;</div><h3>Thank you &ndash; this was a demo</h3><p class="sum" id="dsum"></p><p class="warn"><b>Demo &ndash; no money was taken.</b> No payment was sent to any gateway, phone or card.</p><button type="button" class="btn bb" id="again">Start again</button></div>
+</form></div></section>
+<section class="alt"><div class="w"><span class="k">Prefer to pay directly?</span><h2>Mobile Money or bank transfer</h2>
 <p class="note">Preview: payment details below are placeholders to be filled in by Paint a Life. Please do not send money using this preview.</p>
+
 <div class="pay"><div class="card"><h3>MTN Mobile Money</h3><p>Number: <span class="fill">[Your MTN MoMo number]</span></p><p>Name: <span class="fill">[Registered name]</span></p></div>
 <div class="card"><h3>Airtel Money</h3><p>Number: <span class="fill">[Your Airtel Money number]</span></p><p>Name: <span class="fill">[Registered name]</span></p></div>
 <div class="card"><h3>Bank transfer</h3><p>Bank: <span class="fill">[Bank name]</span><br>Account name: <span class="fill">[Account name]</span><br>Account no.: <span class="fill">[Account number]</span><br>Branch / sort code: <span class="fill">[Branch &amp; code]</span><br>SWIFT: <span class="fill">[SWIFT code]</span></p></div></div>
 <p style="margin-top:22px">Reference: <span class="fill">[e.g. DONATION or ACADEMY]</span>. Then let us know on <a href="tel:+260973649862">+260 973649862</a> or <a href="mailto:paintalife19@gmail.com">paintalife19@gmail.com</a>.</p></div></section>
-<section class="alt"><div class="w two"><div><span class="k">Give in kind</span><h2>Not just money</h2><p class="lead">We welcome clothing, food, booklets/posters, work-space and more.</p><br><a class="btn bc" href="get-involved.html">Offer a donation in kind</a></div><img src="img/hyg5.webp" alt="Donated items" style="max-height:420px;object-fit:cover;width:100%"></div></section></main><div class="rb"></div>
+<section class="alt"><div class="w two"><div><span class="k">Give in kind</span><h2>Not just money</h2><p class="lead">We welcome clothing, food, booklets/posters, work-space and more.</p><br><a class="btn bc" href="get-involved.html">Offer a donation in kind</a></div><img src="img/hyg5.webp" alt="Donated items" style="max-height:420px;object-fit:cover;width:100%"></div></section><section class="final"><div class="w"><div><span class="k" style="color:#ffc94d">Every colour counts</span><h2>Help us transform children into leaders</h2><p>Give, volunteer your time or partner with Paint a Life &ndash; and with the newly reopened Paint a Life Academy for deaf learners.</p></div>
+<div class="acts"><a class="btn bc" href="donate.html">Donate</a><a class="btn bo" href="get-involved.html?i=volunteer">Volunteer</a><a class="btn bo" href="get-involved.html?i=partner">Partner</a></div></div></section>
+</main><div class="rb"></div>
 <footer><div class="w"><div class="fg"><div><a class="brand" href="index.html" style="color:#fff"><img src="img/logo.png" alt="">Paint a Life Initiative</a>
 <p style="margin-top:12px;font-size:14px;max-width:380px">Transforming Children Into Leaders. &ldquo;Many Faces, One Voice&rdquo; &middot; Equip, Empower, and Transform. Registered with PACRA, September 2019.</p></div>
 <div><h4>Explore</h4><a href="about.html">About</a><a href="programmes.html">Programmes</a><a href="academy.html">Paint a Life Academy</a><a href="activities.html">Activities</a><a href="get-involved.html">Get Involved</a><a href="donate.html">Donate</a><a href="what-changed.html">What changed</a></div>
 <div><h4>Contact</h4><a href="tel:+260973649862">+260 973649862</a><a href="tel:+260978378931">+260 978378931</a><a href="mailto:paintalife19@gmail.com">paintalife19@gmail.com</a><a href="mailto:mulemba9@gmail.com">mulemba9@gmail.com</a><a>Facebook: &ldquo;Paint a Life Initiative&rdquo;</a></div></div>
 <div class="cr"><span>&copy; <span id="yr">2026</span> Paint a Life Initiative &middot; Photos &amp; video &copy; Paint a Life Initiative</span><span>Preview by <strong>Teen Tech Technology</strong></span></div></div></footer>
-<script src="site.js"></script></body></html>
+<script src="donate.js"></script><script src="site.js"></script></body></html>
