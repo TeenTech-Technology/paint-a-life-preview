@@ -114,7 +114,7 @@ nav ul a.on {
   color: var(--c);
 }
 
-/* The ☰ menu button (only shown on phones, see section 15) */
+/* The menu menu button (only shown on phones, see section 15) */
 .menu {
   display: none;
   font-size: 26px;
@@ -769,7 +769,7 @@ img.zoom:hover {
 /* Keep this block LAST so it can override the rules above */
 @media (max-width: 900px) {
 
-  /* Navigation: hide the menu links and Register button, show ☰ */
+  /* Navigation: hide the menu links and Register button, show menu */
   nav ul {
     display: none;
   }
@@ -786,7 +786,7 @@ img.zoom:hover {
     display: block;
   }
 
-  /* Menu opened with ☰ (site.js adds the "open" class) */
+  /* Menu opened with menu (site.js adds the "open" class) */
   nav ul.open {
     display: flex;
     flex-direction: column;
@@ -938,3 +938,37 @@ small,.small{font-size:13px;color:#667;display:block;margin-top:6px}
  nav .btn.bc{display:none}
 }
 [hidden]{display:none!important}
+
+/* ---------- v4: white + purple, SVG icons, AA contrast ---------- */
+:root{--b:#5b2a86;--bd:#2e1450;--c:#c2410c;--l:#f6f1fb;--t:#1f1a2e}
+body{background:#fff;color:var(--t)}
+.ico{width:1.15em;height:1.15em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.2em;display:inline-block;flex-shrink:0}
+.ico.lg{width:26px;height:26px}.ico.xl{width:40px;height:40px;stroke-width:2.5}
+.btn .ico{margin:0 6px 0 0}.btn .ico:last-child:not(:first-child){margin:0 0 0 6px}
+.pbar{background:#5b2a86;color:#fff}
+.k{color:var(--b)}h2{color:var(--bd)}
+.bc{background:linear-gradient(135deg,#c2410c,#b4380a);color:#fff;box-shadow:0 8px 20px #c2410c33}
+.bb{background:var(--b);color:#fff}
+.alt{background:#faf7fd}.cause{background:#fff}
+.up{background:#fff;color:var(--t);border-top:1px solid #eee4f6;border-bottom:1px solid #eee4f6}
+.up h2{color:var(--bd)}.up .quote{color:var(--b)}.up p{color:#4a4060}
+.u{background:#faf7fd;border:1px solid #e4d6f2;color:var(--t)}.u .d{background:var(--b);color:#fff}
+.final{background:#f6f1fb;color:var(--t);border-top:4px solid var(--b)}
+.final h2{color:var(--bd)}.final .k{color:var(--b)!important}.final p{color:#4a4060;opacity:1}
+.final .bo{border-color:var(--b);color:var(--b);background:#fff}
+.badge{background:var(--b)}
+.way{border-bottom-color:var(--b)}.way:nth-child(2),.way:nth-child(3){border-bottom-color:var(--b)}
+.way .ic{width:60px;height:60px;border-radius:16px;background:var(--l);color:var(--b);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.way:first-child .ic{background:#fff1ea;color:var(--c)}.way b{color:var(--b);display:inline-flex;align-items:center;gap:4px}
+.story{border-left-color:#d9c6ee}.story b{color:var(--b)}
+.card{border-top-color:var(--b)}.f b{color:var(--b)}
+.menu{color:var(--b);display:none;align-items:center}
+.tick{background:#15803d;display:flex;align-items:center;justify-content:center}
+.dform{border-top-color:var(--b)}.steps span{background:#f0ebf5;color:#5c5470}
+input:checked+span{border-color:var(--b);background:var(--l);color:var(--b)}
+.lb button{display:flex;align-items:center;justify-content:center}
+footer{background:#faf7fd;color:#3e3654;border-top:1px solid #eee4f6}
+footer h4{color:var(--bd)}footer a{color:#4b3a66}footer .brand{color:var(--b)!important}
+.cr{border-top-color:#e4d6f2}.cr strong{color:var(--b)}
+.rb{height:4px}
+@media (max-width:900px){.menu{display:flex}.sdon{background:linear-gradient(135deg,#c2410c,#b4380a);display:flex;align-items:center;justify-content:center;gap:6px}}

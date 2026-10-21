@@ -2,7 +2,7 @@
    Paint a Life Initiative preview - website script
    ---------------------------------------------------------
    Every page loads this file. It does three jobs:
-     1. Mobile menu: the ☰ button opens and closes the menu
+     1. Mobile menu: the menu button opens and closes the menu
      2. Forms: sends the contact / registration forms by email
      3. Photo viewer: click a photo to see it big (lightbox)
    ========================================================= */
@@ -10,7 +10,7 @@
 
 /* ---------- 1. Mobile menu toggle ---------- */
 
-// On small screens the menu links are hidden. Clicking ☰ adds or removes
+// On small screens the menu links are hidden. Clicking the menu button adds or removes
 // the "open" class on the list of links (see "nav ul.open" in style.css).
 document.querySelector('.menu').onclick = function () {
   var menuList = document.querySelector('nav ul');
@@ -37,7 +37,7 @@ var y=document.getElementById('yr');if(y)y.textContent=new Date().getFullYear();
   // and one big image. It stays hidden until a photo is clicked.
   var viewer = document.createElement('div');
   viewer.className = 'lb';
-  viewer.innerHTML = '<button class="lbx" aria-label="Close">×</button><button class="lbp" aria-label="Previous">‹</button><img alt=""><button class="lbn" aria-label="Next">›</button>';
+  viewer.innerHTML = '<button class="lbx" aria-label="Close"><svg class="ico lg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg></button><button class="lbp" aria-label="Previous"><svg class="ico lg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></button><img alt=""><button class="lbn" aria-label="Next"><svg class="ico lg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></button>';
   document.body.appendChild(viewer);
 
   var bigImage = viewer.querySelector('img');
